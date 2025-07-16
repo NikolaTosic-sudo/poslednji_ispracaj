@@ -1,7 +1,15 @@
 /*
-	Standout by Chipper Technology
-  chippertechnology.com
+	Poslednji Ispracaj by Nikola Tosic
+  pieetas.com
 */
+
+function scrollToElement(elementId) {
+  const element = document.getElementById(elementId);
+
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+}
 
 (function ($) {
   var $window = $(window),
@@ -61,10 +69,10 @@
     var settings = {
       // Images (in the format of 'url': 'alignment').
       images: {
-        "images/slides/slide01.jpg": "0% 35%",
-        "images/slides/slide02.jpg": "center",
-        "images/slides/slide03.jpg": "center",
-        "images/slides/slide04.jpg": "center",
+        "images/slides/slide001.jpg": "25% 40%",
+        "images/slides/slide003.jpg": "25% 20%",
+        "images/slides/slide002.jpg": "10% 15%",
+        "images/slides/slide004.jpg": "10% 40%",
       },
 
       // Delay.
