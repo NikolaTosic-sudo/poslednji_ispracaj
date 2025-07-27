@@ -3866,10 +3866,6 @@ input, select, textarea {
 				min-width: 320px;
 			}
 
-				#header + #banner {
-					margin-top: -5rem;
-				}
-
 		}
 
 /* Menu */
@@ -4660,4 +4656,101 @@ input, select, textarea {
 	.copyright {
 		color: rgba(40, 40, 40, 0.5);
 		text-align: center;
+		padding: 2em 0;
 	}
+
+	.lokacija-ikonica {
+		@media screen and (max-width: 780px) {
+			display: none;
+		}
+	}
+	
+	/* MAJOR */
+	header.major {
+		text-align: center;
+	}
+	.contact {
+		margin-top: 5em;
+		padding-bottom: 0 !important;
+	}
+	header.major > :first-child {
+		margin-top: -0.25em;
+	}
+	@media screen and (max-width: 736px) {
+		header p {
+			margin: -0.25em 0 2em 0;
+		}
+	}
+
+	.icon.major {
+  display: block;
+  margin: 0 0 2em 0;
+}
+.icon.major:before {
+  border-radius: 100%;
+  border: solid 1px;
+  display: inline-block;
+  font-size: 1.75em;
+  height: 3.5em;
+  line-height: 3.5em;
+  width: 3.5em;
+  border-color: rgba(67, 75, 86, 0.25);
+}
+@media screen and (max-width: 736px) {
+  .icon.major:before {
+    font-size: 1.5em;
+    height: 3.25em;
+    line-height: 3.25em;
+    width: 3.25em;
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 5em;
+}
+.features section {
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-left: solid 1px;
+  border-top: solid 1px;
+  padding: 2em 3em;
+  text-align: center;
+  width: calc(100% / 3);
+  border-color: rgba(67, 75, 86, 0.25);
+}
+.features section:nth-child(3n - 2) {
+  border-left-width: 0;
+}
+.features section:nth-child(-n + 3) {
+  border-top-width: 0;
+}
+@media screen and (max-width: 980px) {
+  .features {
+    flex-direction: column;
+		margin-bottom: 2em;
+  }
+  .features section {
+    padding: 3em 3em 1em 3em;
+    border-left: 0;
+    width: 100%;
+  }
+  .features section:nth-child(-n + 3) {
+    border-top-width: 1px;
+  }
+  .features section:first-child {
+    border-top-width: 0;
+    padding-top: 1em;
+  }
+  .features section:last-child {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 736px) {
+  .features section {
+    padding: 3em 2em 1em 2em;
+  }
+}

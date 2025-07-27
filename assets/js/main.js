@@ -94,7 +94,8 @@ function scrollToElement(elementId) {
     for (k in settings.images) {
       // Create BG.
       $bg = $("<div />");
-      $bg.css("background-image", 'url("' + k + '")');
+      $bg.css("color", "red")
+      $bg.css("background", 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("' + k + '")');
       $bg.css("background-position", settings.images[k]);
       $bg.appendTo($wrapper);
 
